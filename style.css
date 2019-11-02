@@ -1,0 +1,79 @@
+body {
+  text-align: center;
+  font-family: Impact, Charcoal, sans-serif;
+  background-color: black;
+  color: lime;
+}
+header {
+  background-color: lime;
+  color: black;
+  padding: 5px;
+}
+
+#description {
+  padding: 10px;
+}
+.middle {
+  display: grid;
+  margin: auto;
+  width:75%;
+}
+
+#survey-form {
+  display: grid;
+  grid-template-columns: 10% 40% 10% 40%;
+  grid-gap: 15px 25px;
+  justify-content: space-evenly;
+  padding: 50px;
+  background-color: navy;
+}
+.group {
+  grid-column: 1/5;
+  text-align: center;
+}
+input, select {
+  height: 20px;
+}
+.input-radio {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  margin: auto;
+  
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  margin: auto;
+  background-color: black;
+  padding: 25px;
+  justify-content: start;
+}
+
+.boxes p {
+  grid-column: 1/5;
+}
+
+.radio {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 25px;
+  margin: auto;
+  background-color: black;
+  padding: 25px;
+}
+.radio p {
+  grid-column: 1/5;
+}
+.comment {
+  display: grid;
+  grid-template-columns: auto;
+}
+textarea {
+  width: 75%;
+  margin: auto;
+  height: 100px;
+  resize: vertical;
+}
