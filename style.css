@@ -1,13 +1,15 @@
 body {
   text-align: center;
   font-family: Impact, Charcoal, sans-serif;
-  background-color: black;
-  color: lime;
+  background-color: #115173;
+  color: white;
 }
 header {
-  background-color: lime;
-  color: black;
+  background-color: #022c43;
+  color: white;
   padding: 5px;
+  margin: -10px;
+  width: 100%;
 }
 
 #description {
@@ -16,7 +18,7 @@ header {
 .middle {
   display: grid;
   margin: auto;
-  width:75%;
+  width: 75%;
 }
 
 #survey-form {
@@ -25,21 +27,20 @@ header {
   grid-gap: 15px 25px;
   justify-content: space-evenly;
   padding: 50px;
-  background-color: navy;
 }
 .group {
   grid-column: 1/5;
   text-align: center;
 }
-input, select {
-  height: 20px;
+input {
+  height: 30px;
+  font-size: 12px;
 }
 .input-radio {
   display: grid;
   grid-template-columns: auto;
   grid-gap: 10px;
   margin: auto;
-  
 }
 
 .boxes {
@@ -47,9 +48,10 @@ input, select {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   margin: auto;
-  background-color: black;
+  background-color: #053f5e;
   padding: 25px;
   justify-items: start;
+  width: 95%;
 }
 
 .boxes p {
@@ -60,9 +62,11 @@ input, select {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 25px;
+  justify-content: center;
   margin: auto;
-  background-color: black;
+  background-color: #053f5e;
   padding: 25px;
+  width: 95%;
 }
 .radio p {
   grid-column: 1/5;
@@ -71,9 +75,60 @@ input, select {
   display: grid;
   grid-template-columns: auto;
 }
+
 textarea {
-  width: 75%;
+  width: 100%;
   margin: auto;
   height: 100px;
   resize: vertical;
+}
+
+#dropdown{
+  font-size: 12px;
+  background-color: white;
+}
+
+.submit-b{
+  grid-column: 4;
+  text-align: right;
+}
+
+.button {
+  background-color: #ffd700;
+  border: 2px solid black;
+  border-radius: 8px;
+  color: black;
+  width: 100px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  -webkit-transition-duration: 0.5s; /* Safari */
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
