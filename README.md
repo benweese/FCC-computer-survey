@@ -1,5 +1,6 @@
 [Free Code Camp: Build a Survey Form](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
 -----------
+![Actions](https://github.com/benweese/FCC-computer-survey/workflows/Jekyll%20site%20CI/badge.svg) ![GitHub](https://img.shields.io/github/license/benweese/FCC-computer-survey.svg) ![GitHub issues](https://img.shields.io/github/issues-raw/benweese/FCC-computer-survey.svg)
 
 This is based on Free Code Camp's Build a Survey Form. This meets all the user stories as follows and uses CSS grid to align the elements.
 
